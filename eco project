@@ -1,0 +1,19 @@
+
+age = int(input(""))
+if age >= 18:
+  print("get in")
+  if age > 50:
+    print("senior citizen")
+elif age >= 13 and age <= 18:
+  print("no entry under age")
+else:
+  print(" go home")
+
+
+
+
+
+
+
+
+
