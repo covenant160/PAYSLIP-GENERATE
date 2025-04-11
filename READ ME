@@ -1,0 +1,146 @@
+# 🧾 Python Payslip Generator & Email Sender
+
+This is a Python project that automates the process of generating **payslips** from an Excel file and sending them to employees via **email**.
+
+---
+
+## ✅ Features
+
+- Reads employee data from an Excel sheet (.xlsx)
+- Generates beautiful PDF payslips using **FPDF**
+- Sends each payslip to the employee's email
+- Email login credentials are safely stored in a `.env` file
+
+---
+
+## 📦 Requirements
+
+You need to have **Python 3.10+** installed.
+
+### Install the required libraries:
+```bash
+pip install pandas fpdf python-dotenv
+If you're using email:
+
+bash
+Copy
+Edit
+pip install secure-smtplib
+📁 File Structure
+bash
+Copy
+Edit
+project-folder/
+├── project.py            # Main Python script
+├── employee_data.xlsx    # Input Excel file with employee info
+├── payslips/             # Folder where PDF payslips will be saved
+├── .env                  # Contains email and password
+└── README.md             # This help file
+📑 Excel File Format (employee_data.xlsx)
+Your Excel sheet should have these columns:
+
+Name	Email	Employee ID	Net Salary	Bank Name	Account Number
+Leo Mazive	leomazive@gmail.com	3213	900	ZB Bank	123456789
+Craig Togs	craigt@example.com	1200	1100	CBZ	456789123
+🔐 .env File
+This file stores your email and password safely. It should look like this:
+
+ini
+Copy
+Edit
+EMAIL_ADDRESS=youremail@gmail.com
+EMAIL_PASSWORD=your_app_password
+💡 If using Gmail, create an App Password from your Google account settings.
+
+🧾 How to Run It
+Make sure all required packages are installed.
+
+Make sure .env and employee_data.xlsx are in the same folder.
+
+Run the script:
+
+bash
+Copy
+Edit
+python project.py
+The script will:
+
+Create payslip PDFs in the payslips/ folder
+
+Email each employee their PDF
+
+🛠️ Customizing the Payslip
+If you want to change the look of the payslip (fonts, layout, colors), you can edit the part in the script where FPDF is used.
+
+Example:
+
+python
+Copy
+Edit
+pdf.set_font("Arial", "B", 16)
+pdf.cell(200, 10, "Payslip", ln=True, align="C")
+🧯 Error Handling
+The script handles errors like:
+
+Missing .env or Excel file
+
+Wrong email or password
+
+Problems sending email
+
+All errors are printed in the terminal so you know what went wrong.
+
+🧼 Cleaning Tips
+Delete old payslips from the payslips/ folder if needed
+
+Always double-check your .env before sharing your project
+
+📬 Example Output
+✅ PDF generated:
+
+rust
+Copy
+Edit
+📄 Generated payslip for Leo Mazive: payslips/3213.pdf
+❌ Email failed:
+
+scss
+Copy
+Edit
+❌ Error sending email to leomazive@gmail.com: Username and Password not accepted.
+📚 What You Learn From This Project
+How to read Excel with pandas
+
+How to create PDFs using FPDF
+
+How to send emails with attachments
+
+How to load secret data from .env files
+
+🏁 Next Steps (Optional)
+Add company logo to PDFs
+
+Add total deductions or bonuses
+
+Track delivery status of emails
+
+Create a GUI for user-friendly interaction
+
+👨‍💻 Built with Python by [Your Name]
+📅 Date: April 2025
+
+Happy Coding! Let me know if you need help with anything else 😄
+
+yaml
+Copy
+Edit
+
+---
+
+Would you like me to create a sample `.env` or payslip template for you too?
+
+
+
+
+
+
