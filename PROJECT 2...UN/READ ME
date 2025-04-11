@@ -1,0 +1,86 @@
+# 🛠️ Python Job Scraper - Zimbabwe Job Listings
+
+This project is a simple Python program that collects job ads from [https://vacancymail.co.zw/jobs](https://vacancymail.co.zw/jobs) and saves them into a file you can open with Excel or Google Sheets.
+
+---
+
+## 📚 What it Does
+
+- ✅ Looks for the **10 most recent jobs**
+- ✅ Collects these details:
+  - Job Title 🧑‍💼
+  - Company 🏢
+  - Location 📍
+  - Expiry Date ⏳
+  - Job Description 📝
+- ✅ Saves all of this into a file called **`scraped_data.csv`**
+- ✅ Shows info and problems in the terminal using logs
+- ✅ You can also make it run by itself every day if you want
+
+---
+
+## 🖥️ Requirements
+
+Before using it, make sure you have:
+
+- Python 3.10 or newer installed
+- These Python libraries:
+  - `requests`
+  - `beautifulsoup4`
+  - `pandas`
+  - `schedule` *(for optional automation)*
+
+### 🧪 To install them:
+```bash
+pip install requests beautifulsoup4 pandas schedule
+🚀 How to Run the Scraper
+Download or clone this project
+
+Open the terminal (or PowerShell)
+
+Run this command:
+
+bash
+Copy
+Edit
+python web_scraper.py
+After it's done, check the file called scraped_data.csv – that's where your job data will be!
+
+⏱️ Optional: Make it Run Every Day
+This project can run automatically every day.
+
+If you want that:
+
+Open web_scraper.py
+
+At the bottom you'll see a schedule block
+
+Uncomment it (remove the #) and run the script
+
+You can also use Windows Task Scheduler or cron (Linux/macOS) to run it daily.
+
+🐛 Error Handling & Logs
+This script:
+
+Prints messages like “Starting...” or “No jobs found”
+
+If something goes wrong (like no internet), it shows an error message in the terminal
+
+If the website changes how it looks, it will warn you
+
+📂 Files in the Project
+File	What it does
+web_scraper.py	The main Python code
+scraped_data.csv	Output file with the job listings
+README.md	This help file
+🤝 Made With Love
+This was created as part of a programming crash course to learn about:
+
+Python
+
+Web scraping
+
+Automation
+
+CSV data handling
+
