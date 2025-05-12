@@ -1,0 +1,100 @@
+2025-04-11 01:57:58,358 - INFO - \U0001f501 Starting job scraper...
+2025-04-11 01:57:59,312 - INFO - \u2705 Successfully scraped and saved job data.
+2025-04-11 02:15:44,146 - INFO - \U0001f501 Starting job scraper...
+2025-04-11 02:15:46,839 - INFO - \u2705 Successfully scraped and saved job data.
+2025-04-11 03:15:53,978 - INFO - \u2705 Successfully scraped and saved job data.
+2025-04-11 04:11:56,567 - INFO - \U0001f501 Starting job scraper...
+2025-04-11 04:11:58,421 - INFO - \u2705 Successfully scraped and saved job data.
+2025-04-11 04:15:50,689 - INFO - Starting job scraping...
+2025-04-11 04:15:54,172 - INFO - Successfully saved jobs to scraped_data.csv
+2025-04-11 04:21:32,565 - INFO - Starting job scraping...
+2025-04-11 04:21:33,563 - INFO - Successfully saved jobs to scraped_data.csv
+2025-04-11 04:26:50,348 - INFO - Starting job scraping...
+2025-04-11 04:26:54,432 - ERROR - Unexpected error: [Errno 13] Permission denied: 'scraped_data.csv'
+2025-04-11 04:30:10,041 - ERROR - Unexpected error: [Errno 13] Permission denied: 'scraped_data.csv'
+Traceback (most recent call last):
+  File "c:\Users\uncommonstudent\Desktop\covenant\Leen.py", line 56, in scrape_jobs
+    df.to_csv("scraped_data.csv", index=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\uncommonstudent\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\uncommonstudent\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\uncommonstudent\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\uncommonstudent\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\uncommonstudent\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'scraped_data.csv'
+2025-04-11 04:30:27,050 - ERROR - Unexpected error: [Errno 13] Permission denied: 'scraped_data.csv'
+Traceback (most recent call last):
+  File "c:\Users\uncommonstudent\Desktop\covenant\Leen.py", line 56, in scrape_jobs
+    df.to_csv("scraped_data.csv", index=False)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\uncommonstudent\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\uncommonstudent\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\uncommonstudent\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\uncommonstudent\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\uncommonstudent\AppData\Local\Programs\Python\Python313\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'scraped_data.csv'
+2025-04-11 04:34:21,101 - ERROR - Unexpected error: [Errno 13] Permission denied: 'scraped_data.csv'
+2025-04-11 04:38:02,439 - INFO - Starting job scraping...
+2025-04-11 04:38:05,781 - INFO - Successfully saved jobs to scraped_data.csv
+2025-04-11 04:38:17,582 - INFO - Starting job scraping...
+2025-04-11 04:38:19,182 - INFO - Successfully saved jobs to scraped_data.csv
+2025-04-11 04:38:39,326 - INFO - Starting job scraping...
+2025-04-11 04:38:40,200 - INFO - Successfully saved jobs to scraped_data.csv
+2025-04-11 04:39:27,830 - INFO - Starting job scraping...
+2025-04-11 04:39:29,447 - INFO - Successfully saved jobs to scraped_data.csv
+2025-04-11 04:41:39,348 - INFO - Starting job scraping...
+2025-04-11 04:41:40,272 - INFO - Successfully saved jobs to scraped_data.csv
+2025-04-11 04:41:47,256 - INFO - Starting job scraping...
+2025-04-11 04:41:49,476 - INFO - Successfully saved jobs to scraped_data.csv
